@@ -9,32 +9,32 @@ coffeescriptを使ったIonicのアプリのサンプルです
 以下のコマンドでプロジェクトを初期化します
 
 ```
-npm install
+$ npm install
 ```
 
 iOSとAndroidのプラットフォームを追加します
 
 ```
-ionic platform add ios
-ionic platform add android
+$ ionic platform add ios
+$ ionic platform add android
 ```
 
 必要なプラグインを追加します
 
 ```
-ionic plugin add org.apache.cordova.inappbrowser
-ionic plugin add org.apache.cordova.splashscreen
+$ ionic plugin add org.apache.cordova.inappbrowser
+$ ionic plugin add org.apache.cordova.splashscreen
 ```
 
 AndroidでブラウザのレンダリングエンジンをCrosswalkに変更します
 
 ```
-ionic browser add crosswalk@10.39.235.15
+$ ionic browser add crosswalk@10.39.235.15
 ```
 
 iOSは実行前に以下のコマンドをインストールします
 
-`sudo npm install -g ios-sim`
+`$ sudo npm install -g ios-sim`
 
 Androidは事前にAndroidSdkを入れておいて下さい
 
@@ -42,21 +42,21 @@ Androidは事前にAndroidSdkを入れておいて下さい
 
 iOS
 
-`ionic run ios`
+`$ ionic run ios`
 
 Android
 
-`ionic run android`
+`$ ionic run android`
 
 エミュレータの場合は以下のようになります
 
 iOS
 
-`ionic emulate ios`
+`$ ionic emulate ios`
 
 Android
 
-`ionic emulate android`
+`$ ionic emulate android`
 
 Base Project
 ---
