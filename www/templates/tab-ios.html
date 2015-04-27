@@ -1,0 +1,22 @@
+<ion-view view-title="iOS">
+    <ion-content>
+
+        <ion-refresher
+                pulling-text="Refreshing..."
+                on-refresh="populateList()">
+        </ion-refresher>
+        
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="article in articles" type="item-text-wrap" ng-click="showArticle($index)">
+                <img ng-src="{{article.user.profile_image_url}}">
+                <!--<h2>{{chat.name}}</h2>-->
+                <p style="width: 250px; white-space: normal">{{article.title}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+                <!--<ion-option-button class="button-assertive" ng-click="remove(article)">-->
+                <!--Delete-->
+                <!--</ion-option-button>-->
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
